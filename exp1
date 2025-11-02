@@ -1,0 +1,42 @@
+#include<iostream>
+using namespace std;
+class Student{
+    private:
+    char name[30];
+    int roll;
+    float marks;
+
+    public:
+    void inputdetails()
+    {
+        cout<<"Enter Name:";
+        cin>>name;
+        cout<<"Enter Roll no:";
+        cin>>roll;
+        cout<<"Enter Marks:";
+        cin>>marks;
+    }
+
+    void displaydetails()
+    {
+        cout<<"Student information"<<endl;
+        cout<<"Student Name:"<<name<<endl;
+        cout<<"Student Roll No:"<<roll<<endl;
+        cout<<"Marks:"<<marks<<endl;
+    }
+    
+};
+
+int main()
+{
+    cout<<"Name:Sanskruti Sandip Chougale"<<endl;
+    cout<<"Roll no.: 16"<<endl;
+    cout<<"Batch: S1"<<endl;  
+
+    Student Obj;
+
+    Obj.inputdetails();
+    Obj.displaydetails();
+
+    return 0;
+}
